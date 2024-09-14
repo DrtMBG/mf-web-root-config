@@ -1,0 +1,9 @@
+{
+    "extends": "ts-config-single-spa",
+    "files": ["src/projectmbh-root-config.ts"],
+    "compilerOptions": {
+        "declarationDir": "dist"
+    },
+    "include": ["src/**/*", "src/web.config"],
+    "exclude": ["src/**/*.test*"]
+}

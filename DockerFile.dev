@@ -1,0 +1,15 @@
+FROM node:20.9.0 as build
+
+RUN npm install -g @angular/cli@lastest
+
+WORKDIR /usr/src/app
+
+COPY /package.json ./
+
+RUN npm install 
+
+COPY . .
+
+EXPOSE 9000
+
+CMD {"ng","serve","--host","0.0.0.0","--disable-host-check","--poll=2000"}
