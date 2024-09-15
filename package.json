@@ -10,8 +10,8 @@
         "build": "concurrently npm:build:*",
         "build:webpack": "webpack --mode=production",
         "build-prod": "webpack --env goal=prod",
-        "build-integra": "webpack --env goal=integra",
         "build-qa": "webpack --env goal=qa",
+        "build-dev": "webpack --env goal=dev",
         "build:types": "tsc"
     },
     "devDependencies": {
