@@ -2,8 +2,10 @@
     "extends": "ts-config-single-spa",
     "files": ["src/projectmbh-root-config.ts"],
     "compilerOptions": {
-        "declarationDir": "dist"
+      "declarationDir": "dist",
+      "typeRoots": ["./node_modules/@types"]
     },
-    "include": ["src/**/*", "src/web.config"],
-    "exclude": ["src/**/*.test*"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.test.ts", "node_modules"]
 }
+  

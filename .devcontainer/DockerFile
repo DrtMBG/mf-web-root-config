@@ -1,3 +1,0 @@
-FROM node:20.9.0 as build
-RUN npm install -g @angular/cli@lastest
-CMD {"echo","AzRootProjectMbh Dev Container"}
